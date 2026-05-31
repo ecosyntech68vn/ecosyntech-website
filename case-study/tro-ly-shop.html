@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#16a34a" />
+<title>Case Study: Trợ Lý Shop — bot CSKH AI-first cho shop nhỏ Việt Nam</title>
+<meta name="description" content="Trợ Lý Shop case study: bot CSKH multi-tenant Flask + SQLite + AI skills, deploy 1 VPS $5/tháng, vận hành bởi 1 founder. Kiến trúc Frugal Innovation chi tiết." />
+<meta name="keywords" content="Trợ Lý Shop case study, bot CSKH Việt Nam, Flask Telegram bot, multi-tenant SaaS, copywriter-viet-pro, founder solo SaaS" />
+<meta name="author" content="Tạ Quang Thuận" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://ecosyntechglobal.com/case-study/tro-ly-shop.html" />
+<link rel="icon" type="image/png" href="/assets/logo/favicon-512.png" />
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="EcoSynTech Global" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:url" content="https://ecosyntechglobal.com/case-study/tro-ly-shop.html" />
+<meta property="og:title" content="Case Study: Trợ Lý Shop — bot CSKH AI-first" />
+<meta property="og:description" content="Multi-tenant Flask + SQLite + AI skills, deploy 1 VPS $5/tháng, 1 founder vận hành." />
+<meta property="og:image" content="https://ecosyntechglobal.com/assets/og/og-cover.png" />
+<meta property="og:image:width" content="1640" />
+<meta property="og:image:height" content="856" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Case Study: Trợ Lý Shop — bot CSKH AI-first cho shop nhỏ Việt Nam",
+  "datePublished": "2026-05-31",
+  "dateModified": "2026-05-31",
+  "author": { "@type": "Person", "name": "Tạ Quang Thuận" },
+  "publisher": { "@type": "Organization", "name": "Công ty TNHH Công Nghệ EcoSynTech Global" },
+  "image": "https://ecosyntechglobal.com/assets/og/og-cover.png",
+  "inLanguage": "vi-VN"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Bỏ qua đến nội dung chính</a>
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="EcoSynTech Global - Trang chủ"><img src="/assets/logo/logo-horizontal-color.png" alt="EcoSynTech Global logo" width="160" height="38" /></a>
+    <nav class="main" role="navigation" aria-label="Điều hướng chính">
+      <a href="/">Trang chủ</a><a href="/about.html">Về chúng tôi</a><a href="/products.html">Sản phẩm</a><a href="/blog/">Blog</a><a href="/story.html">Câu chuyện</a><a href="/contact.html" class="cta">Liên hệ</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap"><nav class="breadcrumb"><a href="/">Trang chủ</a><span class="sep">›</span><a href="/case-study/">Case study</a><span class="sep">›</span><span aria-current="page">Trợ Lý Shop</span></nav></div>
+
+<main id="main">
+<section class="section">
+  <div class="wrap">
+    <article class="post">
+      <p class="muted">Case study #1 · 31/05/2026 · Tạ Quang Thuận</p>
+      <h1>Trợ Lý Shop — bot CSKH multi-tenant cho chủ shop nhỏ Việt Nam</h1>
+      <p><strong>Tóm tắt</strong>: Bot Telegram AI-first hỗ trợ chủ shop nhỏ chăm sóc khách 24/24. Multi-tenant (mỗi shop có catalog/đơn riêng), kiến trúc Flask + SQLite + AI skills modular. Vận hành bởi 1 founder. Test suite 24/24 PASS.</p>
+
+      <h2>Bài toán</h2>
+      <p>Chủ shop nhỏ Việt Nam (thời trang, F&B, làm đẹp) không đủ tiền thuê CSKH 24/7. Khách hỏi giá lúc 11 giờ đêm → không có ai trả lời → mất đơn.</p>
+
+      <h2>Giải pháp</h2>
+      <ul>
+        <li><strong>Multi-tenant Telegram bot</strong>: 1 instance bot hỗ trợ nhiều shop, mỗi shop tách dữ liệu hoàn toàn.</li>
+        <li><strong>AI skills modular</strong>: skill `copywriter-viet-pro` viết câu trả lời tiếng Việt theo brand voice của shop; skill `order-tracker` quản lý đơn; skill `catalog-search` tìm sản phẩm.</li>
+        <li><strong>Admin web UI</strong>: chủ shop xem/sửa câu trả lời AI, quản lý catalog qua dashboard Flask Jinja2.</li>
+        <li><strong>Correction loop</strong>: khi AI trả lời sai, chủ shop sửa → câu sửa được lưu lại → AI học theo cho lần sau.</li>
+      </ul>
+
+      <h2>Stack kỹ thuật</h2>
+      <ul>
+        <li><strong>Backend</strong>: Flask + SQLite (per-tenant) + Jinja2 templates</li>
+        <li><strong>AI</strong>: Claude API (primary) + Gemini fallback gateway</li>
+        <li><strong>Hosting</strong>: 1 VPS DigitalOcean $5-10/tháng (chạy chung với 2 bot khác: AI Thực Chiến + Cỗ Máy)</li>
+        <li><strong>CI/CD</strong>: GitHub Actions — test 24 case pytest + py_compile + gitleaks secret scan</li>
+        <li><strong>Source</strong>: Monorepo `All_In_One_ESTG` trên GitHub `ecosyntech68vn`</li>
+      </ul>
+
+      <h2>Kết quả định lượng (tính đến 31/05/2026)</h2>
+      <ul>
+        <li><strong>24/24 test case PASS</strong> trong CI</li>
+        <li><strong>Latency trung bình</strong>: &lt;1.5s từ tin nhắn khách đến reply AI</li>
+        <li><strong>Cost vận hành</strong>: ~$8/tháng VPS + ~$5-15/tháng AI API tuỳ traffic</li>
+        <li><strong>Stack maintainable bởi 1 người</strong> — toàn bộ codebase Python ~5000 LOC, đọc hiểu trong 1 buổi sáng</li>
+      </ul>
+
+      <h2>Bài học Frugal Innovation</h2>
+      <ol>
+        <li><strong>SQLite thay Postgres</strong> — multi-tenant per-file, đơn giản, backup = cp file.</li>
+        <li><strong>Jinja2 thay React</strong> — admin web UI cho non-tech user, không cần build step.</li>
+        <li><strong>1 VPS chạy 3 bot</strong> — gộp deployment, share resources, giảm điểm hỏng.</li>
+        <li><strong>Skills modular</strong> — mỗi capability là 1 file Python độc lập, plug-and-play.</li>
+      </ol>
+
+      <h2>Không phù hợp khi</h2>
+      <ul>
+        <li>Shop yêu cầu integration với Shopify/WooCommerce/Magento (chưa hỗ trợ).</li>
+        <li>Volume >10.000 tin nhắn/ngày/shop (SQLite sẽ bottleneck — cần migrate Postgres).</li>
+        <li>Khách hàng cần SSO doanh nghiệp (chỉ hỗ trợ Telegram login hiện tại).</li>
+      </ul>
+
+      <hr class="soft" />
+      <p>Quan tâm Trợ Lý Shop cho shop của bạn? Nhắn em qua Telegram <a href="https://t.me/ThuanFX">@ThuanFX</a> hoặc Zalo <a href="https://zalo.me/0985438373">0985 438 373</a>.</p>
+      <p class="muted"><a href="/case-study/">← Quay về Case study</a></p>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="site" role="contentinfo">
+  <div class="wrap">
+    <div class="grid grid-3">
+      <div class="col"><h4>EcoSynTech Global</h4><p style="color:rgba(255,255,255,0.7);font-size:0.93rem;">Công ty TNHH Công Nghệ EcoSynTech Global.</p></div>
+      <div class="col"><h4>Khám phá</h4><ul><li><a href="/products.html">Sản phẩm</a></li><li><a href="/blog/">Blog</a></li><li><a href="/case-study/">Case study</a></li></ul></div>
+      <div class="col"><h4>Liên hệ</h4><ul><li>Telegram: <a href="https://t.me/ThuanFX">@ThuanFX</a></li><li>Zalo: <a href="https://zalo.me/0985438373">0985 438 373</a></li></ul></div>
+    </div>
+    <div class="bottom"><span>© 2026 EcoSynTech Global.</span><span><a href="/policies.html">Chính sách</a></span></div>
+  </div>
+</footer>
+</body>
+</html>
