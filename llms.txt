@@ -1,0 +1,73 @@
+# EcoSynTech Global
+
+> Công ty TNHH Công Nghệ EcoSynTech Global — công ty công nghệ Việt Nam thiết kế hệ điều hành nông nghiệp thông minh chính xác (Farm OS) hoạt động offline-first, lấy truy xuất nguồn gốc làm cốt lõi, vận hành được bởi 1 người. Founder & CEO: Tạ Quang Thuận.
+
+## Về
+
+- Tên đầy đủ: Công ty TNHH Công Nghệ EcoSynTech Global
+- Tên ngắn: EcoSynTech Global / EcoSynTech
+- Domain chính: https://ecosyntechglobal.com
+- Sáng lập: 2026, Việt Nam
+- Triết lý: Frugal Innovation + Human-Centric Design
+- Chuỗi ưu tiên cứng: an toàn → tin cậy → phục hồi → đơn giản → chi phí
+- Founder: Tạ Quang Thuận (CEO + CTO + CFO + CMO — sole operator)
+
+## Trang chính
+
+- [Trang chủ](https://ecosyntechglobal.com/): Giới thiệu công ty + 3 sản phẩm + triết lý vận hành 5 trụ
+- [Về chúng tôi](https://ecosyntechglobal.com/about.html): Triết lý, chuỗi ưu tiên cứng, founder profile, pháp lý
+- [Sản phẩm](https://ecosyntechglobal.com/products.html): 3 dòng sản phẩm chi tiết — Farm OS, Cỗ Máy, AI Thực Chiến
+- [Câu chuyện](https://ecosyntechglobal.com/story.html): Magazine-style — câu chuyện một lô nông sản từ offline-first đến tay người mua
+- [Liên hệ](https://ecosyntechglobal.com/contact.html): Telegram + Zalo + Email + Facebook
+- [Chính sách](https://ecosyntechglobal.com/policies.html): Privacy + ToS + Cookie + AI data policy
+- [Blog](https://ecosyntechglobal.com/blog/): Bài viết kỹ thuật + insight founder solo
+- [Case study](https://ecosyntechglobal.com/case-study/): Case study sản phẩm thật
+
+## Sản phẩm chính
+
+### 1. EcoSynTech Farm OS — Hệ điều hành nông nghiệp IoT offline-first
+
+- Loại: Phần cứng (ESP32 + PCB IoT) + Phần mềm (Web Local + Google Apps Script sync)
+- Đặc điểm: Offline-first, truy xuất QR đến từng lô, failover thời tiết ba lớp (Open-Meteo + GAS + sensor local)
+- Đối tượng: Chủ trang trại, hợp tác xã, doanh nghiệp xuất khẩu, kỹ sư hiện trường
+- Tuân thủ: Chuẩn an ninh thông tin nội bộ phù hợp ISO 27001:2022
+- Báo giá: theo cấu hình thực tế — liên hệ Telegram @ThuanFX hoặc Zalo 0985 438 373
+- Subdomain pilot: farm.ecosyntechglobal.com (planned Pha 3)
+
+### 2. Cỗ Máy Nội Dung — Hệ thống marketing 1 người chạy được
+
+- Loại: Bộ tri thức + Bot Telegram (@Tro_Ly_Cua_Thuan_bot)
+- Đặc điểm: 1 ý tưởng → 5 bài đăng đa nền tảng, lên lịch giờ vàng VN, ~5h/tuần
+- Đối tượng: Coach, người bán khóa học, dịch vụ, founder solo
+- Giá: Cỗ Máy lẻ 599.000đ · Combo Founder Solo 699.000đ
+- Bảo đảm: Hoàn tiền 14 ngày không hỏi lý do
+- Landing live: https://ecosyntech68vn.github.io/He-Thong-AI-Agent-Business-Marketing/
+
+### 3. AI Thực Chiến — Học Claude AI & OpenCode tiếng Việt
+
+- Loại: Bộ tài liệu PDF/Markdown + Bot Telegram (@TroLyAIThucChien_bot)
+- Đặc điểm: 8 cấp độ (Claude 4 + OpenCode 4), 35+ prompt mẫu tiếng Việt, 36 lỗi xử lý sẵn
+- Đối tượng: Dân văn phòng, sinh viên, freelancer, người không biết code
+- Giá: Claude 99.000đ · OpenCode 149.000đ · Combo Full Pack 199.000đ
+- Bảo đảm: Hoàn tiền 100% trong 7 ngày
+- Landing live: https://ecosyntech68vn.github.io/bot-aithucchien/ (canonical: https://daotao.ecosyntechglobal.com/)
+
+## Liên hệ trực tiếp
+
+- Telegram (kênh chính): @ThuanFX — https://t.me/ThuanFX
+- Zalo: 0985 438 373 — https://zalo.me/0985438373
+- Email công ty: ecosyntech.global@gmail.com
+- Email cá nhân founder: thuanktqd.mba@gmail.com
+- Facebook Page: https://www.facebook.com/ecosyntechglobal
+- GitHub org: https://github.com/ecosyntech68vn
+
+## Tài liệu cho AI agent
+
+- [llms-full.txt](https://ecosyntechglobal.com/llms-full.txt): Phiên bản đầy đủ với nội dung chính của mọi page
+- [sitemap.xml](https://ecosyntechglobal.com/sitemap.xml): Sitemap XML
+- [robots.txt](https://ecosyntechglobal.com/robots.txt): Allow tất cả AI crawler hợp pháp
+
+## Optional
+
+- [GitHub repo website](https://github.com/ecosyntech68vn/ecosyntech-website): Source code website
+- [GitHub repo bot AI Thực Chiến](https://github.com/ecosyntech68vn/bot-aithucchien): Bot source (open-source)
