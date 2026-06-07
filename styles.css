@@ -178,44 +178,4 @@ footer.site .bottom { border-top: 1px solid rgba(255, 255, 255, 0.10);
 
 /* Blog */
 .post-list { display: grid; gap: var(--gap); }
-.post-card { display: block; padding: 24px; background: #fff; border: 1px solid var(--border);
-  border-radius: var(--radius); transition: all .2s; text-decoration: none; color: inherit; }
-.post-card:hover { border-color: var(--eco-primary); transform: translateY(-2px);
-  box-shadow: var(--shadow-md); text-decoration: none; color: inherit; }
-.post-card .meta { font-size: 0.85rem; color: var(--ink-600); margin-bottom: 8px; }
-.post-card h3 { color: var(--ink-900); margin-bottom: 8px; }
-.post-card p { color: var(--ink-700); margin-bottom: 0; }
-.post-tags { display: inline-flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
-.post-tags span { font-size: 0.7rem; padding: 3px 8px; border-radius: 999px;
-  background: var(--eco-tint); color: var(--eco-dark); font-weight: 600; }
-article.post { max-width: 760px; margin: 0 auto; }
-article.post h2 { margin-top: 1.6em; }
-article.post p, article.post li { font-size: 1.05rem; line-height: 1.75; }
-article.post ul, article.post ol { padding-left: 24px; margin-bottom: 1em; }
-
-.utility-strip { background: var(--eco-tint); padding: 18px 0; font-size: 0.92rem; color: var(--eco-dark); }
-.utility-strip strong { color: var(--ink-900); }
-
-.center { text-align: center; }
-.mt-0 { margin-top: 0; } .mb-0 { margin-bottom: 0; }
-.mt-lg { margin-top: var(--gap-lg); }
-hr.soft { border: 0; border-top: 1px dashed var(--border); margin: 36px 0; }
-
-@media (max-width: 720px) {
-  nav.main a { padding: 6px 10px; font-size: 0.9rem; }
-  nav.main a.cta { padding: 8px 14px; }
-  .brand small { display: none; }
-  .hero { padding-top: 48px; padding-bottom: 48px; }
-  footer.site .bottom { flex-direction: column; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition: none !important; animation: none !important; }
-  html { scroll-behavior: auto; }
-}
-
-@media print {
-  .topbar, footer.site, .cta-row, nav.main { display: none; }
-  a { color: #000; text-decoration: underline; }
-  body { font-size: 12pt; line-height: 1.4; }
-}
+.post-card { display: block; padd

@@ -38,6 +38,13 @@
 <link rel="preload" as="image" href="/assets/logo/logo-horizontal-color.png" fetchpriority="high" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/styles.css" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<meta name="application-name" content="EcoSynTech" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="EcoSynTech" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https:; upgrade-insecure-requests" />
 
 <script type="application/ld+json">
 {
@@ -124,6 +131,37 @@
       "url": "https://ecosyntechglobal.com/products.html#ai-thuc-chien"
     },
     {
+      "@type": "FAQPage",
+      "@id": "https://ecosyntechglobal.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "EcoSynTech Farm OS hoạt động được khi mất mạng không?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Có. Đây là hệ điều hành offline-first. Khi mất mạng, thiết bị tiếp tục thu thập telemetry, điều khiển relay, lưu audit log local. Khi có mạng lại, tự sync về cloud không mất dữ liệu." }
+        },
+        {
+          "@type": "Question",
+          "name": "1 người có vận hành được Farm OS cho 100 thiết bị không?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Có. Hệ thống được thiết kế cho founder solo và đội nhỏ. Tự diagnose, tự healing, alert qua Telegram, web admin tập trung. Theo benchmark pilot: 1 người quản lý ổn định 100-150 thiết bị." }
+        },
+        {
+          "@type": "Question",
+          "name": "Source code có open-source không?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Có. 4 repo công khai 30 ngày trên GitHub: ecosyntech-pcb-v8 (CERN-OHL), ecosyntech-fw-v9-4 (GPL-3.0), ecosyntech-gas-v10-3 (Apache-2.0), ecosyntech-web-local-core (AGPL-3.0). Xem github.com/ecosyntech68vn." }
+        },
+        {
+          "@type": "Question",
+          "name": "Mua sản phẩm qua kênh nào?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Liên hệ qua Telegram @ThuanFX, Zalo 0985 438 373, hoặc email ecosyntech.global@gmail.com. Báo giá theo cấu hình thực tế và quy mô trang trại." }
+        },
+        {
+          "@type": "Question",
+          "name": "Có hỗ trợ kỹ thuật sau bán không?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Có. Hỗ trợ qua Telegram + Zalo trong giờ hành chính. OTA firmware từ xa khi cần. Thay thế phần cứng theo bảo hành 12 tháng." }
+        }
+      ]
+    },
+    {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://ecosyntechglobal.com/" }
@@ -195,7 +233,7 @@
   <div class="wrap">
     <h2 id="products-title">Sản phẩm chính</h2>
     <p class="muted">Ba dòng sản phẩm cho doanh nghiệp 1 người Việt Nam.</p>
-    <div class="grid grid-3 mt-lg">
+    <div class="grid grid-3" style="margin-top:32px;">
 
       <article class="card">
         <span class="tag">Phần cứng + Phần mềm</span>
@@ -222,8 +260,65 @@
   </div>
 </section>
 
+<section class="section section-alt" aria-labelledby="opensource-title">
+  <div class="wrap">
+    <h2 id="opensource-title">Open Source — 4 dự án công khai</h2>
+    <p class="muted" style="max-width:62ch;">Chúng tôi mở mã nguồn cốt lõi 30 ngày để cộng đồng dev Việt Nam có thể tham khảo, fork, học hỏi. Không phải vì marketing, mà vì tin Frugal Innovation lan tỏa nhanh hơn khi minh bạch.</p>
+    <div class="grid grid-2" style="margin-top:24px;">
+      <article class="card">
+        <span class="tag">Hardware</span>
+        <h3><a href="https://github.com/ecosyntech68vn/ecosyntech-pcb-v8" rel="noopener">ecosyntech-pcb-v8</a></h3>
+        <p>Open-source ESP32 industrial IoT gateway PCB. Wide-input 9-30V, MP1584 dual, WiFi+4G+LoRa, IP65 enclosure. CERN-OHL-S-2.0.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Firmware</span>
+        <h3><a href="https://github.com/ecosyntech68vn/ecosyntech-fw-v9-4" rel="noopener">ecosyntech-fw-v9-4</a></h3>
+        <p>Secure offline-first ESP32 firmware. Multi-relay safety, 16MB OTA, HMAC + SemVer anti-rollback. PCB V8.0 ready. GPL-3.0.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Backend</span>
+        <h3><a href="https://github.com/ecosyntech68vn/ecosyntech-gas-v10-3" rel="noopener">ecosyntech-gas-v10-3</a></h3>
+        <p>Apps Script backend 56 modules. HMAC auth, CSPRNG, multi-tier license, Aptos weekly anchor. Apache-2.0.</p>
+      </article>
+      <article class="card">
+        <span class="tag">Web Local</span>
+        <h3><a href="https://github.com/ecosyntech68vn/ecosyntech-web-local-core" rel="noopener">ecosyntech-web-local-core</a></h3>
+        <p>Offline-first Node.js backend. 100+ services, on-device AI/ML, multi-channel alerts, ISO 27001 aligned, Vietnamese SME-ready. AGPL-3.0.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faq-title">
+  <div class="wrap" style="max-width:780px;">
+    <h2 id="faq-title">Câu hỏi thường gặp</h2>
+    <div style="margin-top:24px;">
+      <details style="padding:16px 0;border-bottom:1px solid var(--border);">
+        <summary style="cursor:pointer;font-weight:700;color:var(--ink-900);font-family:var(--font-serif);font-size:1.1rem;">Farm OS có hoạt động khi mất mạng không?</summary>
+        <p style="margin-top:10px;color:var(--ink-700);">Có. Đây là hệ điều hành <strong>offline-first</strong>. Khi mất mạng, thiết bị tiếp tục thu telemetry, điều khiển relay, lưu audit log local 16MB. Khi có mạng lại, tự sync về cloud — không mất dữ liệu.</p>
+      </details>
+      <details style="padding:16px 0;border-bottom:1px solid var(--border);">
+        <summary style="cursor:pointer;font-weight:700;color:var(--ink-900);font-family:var(--font-serif);font-size:1.1rem;">1 người có vận hành được 100 thiết bị không?</summary>
+        <p style="margin-top:10px;color:var(--ink-700);">Có. Hệ thống thiết kế cho founder solo + đội nhỏ. Tự diagnose + self-heal + alert Telegram + web admin tập trung. Pilot ghi nhận: 1 người quản lý ổn 100-150 thiết bị.</p>
+      </details>
+      <details style="padding:16px 0;border-bottom:1px solid var(--border);">
+        <summary style="cursor:pointer;font-weight:700;color:var(--ink-900);font-family:var(--font-serif);font-size:1.1rem;">Source code có open-source không?</summary>
+        <p style="margin-top:10px;color:var(--ink-700);">Có. 4 repo công khai trên <a href="https://github.com/ecosyntech68vn">GitHub ecosyntech68vn</a>: PCB V8 (CERN-OHL), FW V9.4 (GPL-3.0), GAS V10.3 (Apache-2.0), Web Local Core (AGPL-3.0).</p>
+      </details>
+      <details style="padding:16px 0;border-bottom:1px solid var(--border);">
+        <summary style="cursor:pointer;font-weight:700;color:var(--ink-900);font-family:var(--font-serif);font-size:1.1rem;">Mua sản phẩm qua kênh nào?</summary>
+        <p style="margin-top:10px;color:var(--ink-700);">Liên hệ qua <a href="https://t.me/ThuanFX">Telegram @ThuanFX</a>, <a href="https://zalo.me/0985438373">Zalo 0985 438 373</a>, hoặc email <a href="mailto:ecosyntech.global@gmail.com">ecosyntech.global@gmail.com</a>. Báo giá theo cấu hình và quy mô trang trại.</p>
+      </details>
+      <details style="padding:16px 0;border-bottom:1px solid var(--border);">
+        <summary style="cursor:pointer;font-weight:700;color:var(--ink-900);font-family:var(--font-serif);font-size:1.1rem;">Có hỗ trợ kỹ thuật sau bán không?</summary>
+        <p style="margin-top:10px;color:var(--ink-700);">Có. Hỗ trợ qua Telegram + Zalo trong giờ hành chính. OTA firmware từ xa khi cần. Bảo hành phần cứng 12 tháng.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section class="section section-dark" aria-labelledby="cta-title">
-  <div class="wrap center">
+  <div class="wrap" style="text-align:center;">
     <h2 id="cta-title" style="color:#fff;">Bạn đang vận hành một mình?</h2>
     <p style="color: var(--eco-soft); max-width: 56ch; margin: 12px auto 28px;">
       EcoSynTech Global được thiết kế cho founder solo, chủ shop nhỏ, kỹ sư hiện trường,
@@ -273,6 +368,14 @@
     </div>
   </div>
 </footer>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').catch(function(){});
+  });
+}
+</script>
 
 </body>
 </html>

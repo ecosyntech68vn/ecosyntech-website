@@ -1,0 +1,51 @@
+{
+  "name": "EcoSynTech Global",
+  "short_name": "EcoSynTech",
+  "description": "Farm OS offline-first cho nông nghiệp Việt Nam. Frugal Innovation. Made in Vietnam.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#16a34a",
+  "background_color": "#ffffff",
+  "lang": "vi-VN",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "agriculture", "iot"],
+  "icons": [
+    {
+      "src": "/assets/logo/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sản phẩm",
+      "short_name": "Sản phẩm",
+      "description": "3 sản phẩm chính EcoSynTech",
+      "url": "/products.html",
+      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Liên hệ",
+      "short_name": "Liên hệ",
+      "description": "Liên hệ qua Telegram / Zalo / Email",
+      "url": "/contact.html",
+      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+    },
+    {
+      "name": "Câu chuyện",
+      "short_name": "Câu chuyện",
+      "description": "Câu chuyện thành lập EcoSynTech Global",
+      "url": "/story.html",
+      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+    }
+  ]
+}
