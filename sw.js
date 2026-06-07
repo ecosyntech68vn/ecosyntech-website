@@ -1,4 +1,4 @@
-/**
+﻿/**
  * EcoSynTech Global — Service Worker
  * Strategy:
  *   - HTML pages: network-first with cache fallback (offline support)
@@ -10,20 +10,20 @@
 
 const CACHE = 'ecosyn-v1-2026-06-07';
 const CORE = [
-  '/',
-  '/index.html',
-  '/about.html',
-  '/products.html',
-  '/story.html',
-  '/contact.html',
-  '/policies.html',
-  '/404.html',
-  '/styles.css',
-  '/assets/logo/logo-horizontal-color.png',
-  '/assets/logo/favicon-512.png',
-  '/assets/logo/app-icon-512.png',
-  '/assets/og/og-cover.png',
-  '/manifest.webmanifest'
+  '/ecosyntech-website/',
+  '/ecosyntech-website/index.html',
+  '/ecosyntech-website/about.html',
+  '/ecosyntech-website/products.html',
+  '/ecosyntech-website/story.html',
+  '/ecosyntech-website/contact.html',
+  '/ecosyntech-website/policies.html',
+  '/ecosyntech-website/404.html',
+  '/ecosyntech-website/styles.css',
+  '/ecosyntech-website/assets/logo/logo-horizontal-color.png',
+  '/ecosyntech-website/assets/logo/favicon-512.png',
+  '/ecosyntech-website/assets/logo/app-icon-512.png',
+  '/ecosyntech-website/assets/og/og-cover.png',
+  '/ecosyntech-website/manifest.webmanifest'
 ];
 
 self.addEventListener('install', e => {
@@ -57,7 +57,7 @@ self.addEventListener('fetch', e => {
         return fresh;
       } catch {
         const cached = await caches.match(req);
-        return cached || caches.match('/404.html');
+        return cached || caches.match('/ecosyntech-website/404.html');
       }
     })());
     return;

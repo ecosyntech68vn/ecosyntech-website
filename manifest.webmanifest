@@ -1,9 +1,9 @@
-{
+﻿{
   "name": "EcoSynTech Global",
   "short_name": "EcoSynTech",
   "description": "Farm OS offline-first cho nông nghiệp Việt Nam. Frugal Innovation. Made in Vietnam.",
-  "start_url": "/",
-  "scope": "/",
+  "start_url":"/ecosyntech-website/",
+  "scope":"/ecosyntech-website/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#16a34a",
@@ -13,13 +13,13 @@
   "categories": ["business", "productivity", "agriculture", "iot"],
   "icons": [
     {
-      "src": "/assets/logo/favicon-512.png",
+      "src":"/ecosyntech-website/assets/logo/favicon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo/app-icon-512.png",
+      "src":"/ecosyntech-website/assets/logo/app-icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -30,22 +30,22 @@
       "name": "Sản phẩm",
       "short_name": "Sản phẩm",
       "description": "3 sản phẩm chính EcoSynTech",
-      "url": "/products.html",
-      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+      "url":"/ecosyntech-website/products.html",
+      "icons": [{ "src":"/ecosyntech-website/assets/logo/favicon-512.png", "sizes": "512x512" }]
     },
     {
       "name": "Liên hệ",
       "short_name": "Liên hệ",
       "description": "Liên hệ qua Telegram / Zalo / Email",
-      "url": "/contact.html",
-      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+      "url":"/ecosyntech-website/contact.html",
+      "icons": [{ "src":"/ecosyntech-website/assets/logo/favicon-512.png", "sizes": "512x512" }]
     },
     {
       "name": "Câu chuyện",
       "short_name": "Câu chuyện",
       "description": "Câu chuyện thành lập EcoSynTech Global",
-      "url": "/story.html",
-      "icons": [{ "src": "/assets/logo/favicon-512.png", "sizes": "512x512" }]
+      "url":"/ecosyntech-website/story.html",
+      "icons": [{ "src":"/ecosyntech-website/assets/logo/favicon-512.png", "sizes": "512x512" }]
     }
   ]
 }
